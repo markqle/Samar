@@ -1,0 +1,162 @@
+/*! GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font */
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1199px;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+/*! HEADER */
+.header__content{
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+header .header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header__content nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.header__content nav ul li{
+    display: inline;
+    padding: 55px 15px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header__content nav ul{
+    list-style: none;
+}
+
+
+a span {
+display: inline-block;
+  transition: all 1s;
+}
+
+a:hover {
+  color: #f55f8d;
+}
+
+a:hover span {
+  animation: upToDown 0.3s;
+}
+
+.btn-grad {
+    /*  linear-gradient(hướng trải màu, danh sách các màu );
+        _ to right: màu đang được trải từ trái sang phải
+        _ #fc00ff 0%, #00dbde 51%, #fc00ff 100%: thứ tự màu cần trải, phần trăm sau mã màu là vị trí bắt đầu trải của màu đó.
+          Nếu không thêm phần trăm thì linear-gradient sẽ tự chia vùng màu sao cho đều nhau
+    */
+    background-image: linear-gradient(
+      to right,
+     #f55f8d 0, #f8ae56 51%, #f55f8d 100%
+    );
+  
+    margin: 10px;
+    padding: 20px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+  
+    /*   tăng kích thước của màu nền, giúp vùng trải màu rộng hơn làm màu loan ra rộng hơn */
+    background-size: 200%;
+    border: 1px solid transparent;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 30px;
+    display: block;
+  }
+  
+  .btn-grad:hover {
+    /*   Khi hover chỉnh vị trí ưu tiên hiển thị của màu nền. 
+    Mặc định không xét giá trị cho background-position 
+    thì sẽ có giá trị mặc định background-position: left top; 
+    */
+    background-position: right center;
+  
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+/* BANNER */
+.banner{
+  padding: 70px 0;
+  background-image: url(../img/pic2.png);
+}
+
+.banner .banner__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__content .banner__left .banner__title p{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color:#f55f8d;
+}
+
+.banner__content .banner__left .banner__title h2{
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1.1;
+  color:#262626;
+  margin-bottom: 20px;
+}
+
+.banner__content .banner__left .banner__info p{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.banner__content .banner__left .banner__info ul {
+  list-style: none;
+}
+
+@keyframes upToDown {
+    49% {
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    51% {
+      opacity: 1;
+    }
+  }
