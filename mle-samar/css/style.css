@@ -21,6 +21,10 @@ html, body{
 
 
 /*! HEADER */
+.header{
+  position: absolute;
+}
+
 .header__content{
     background-color: transparent;
     padding: 20px 0;
@@ -211,13 +215,14 @@ a:hover span {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   transform: translateY(0);
-  transition: transform 0.3s, border-color 0.3s;
-  border:  4px  dashed transparent;
+  transition: transform 0.5s, border-image 0.5s;
+  /* border:  4px  dashed transparent; */
 }
 
 .service__item:hover {
   transform: translateY(-20px);
   border-color: #f55f8d; 
+  border-image: url('../img/br.png') 30 / 19px round;
 }
 
 
