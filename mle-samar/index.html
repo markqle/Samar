@@ -8,10 +8,22 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- LINE AWESOME -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
     <!-- FONT-GOOGLE / ROBOTO-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- FLATICON -->
+    <link rel="stylesheet" href="./css/flaticon/flaticon.css">
+
+    <!-- ANIMATE FADE IN UP -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -88,19 +100,25 @@
             <div class="banner__content">
                 <div class="banner__left">
                     <div class="banner__title">
-                        <p>We are The Best</p>
-                        <h2>Freelance Product Designer Running</h2>
+                        <p class="animate__animated animate__fadeInUp">We are The Best</p>
+                        <h2 class="animate__animated animate__fadeInUp  animate__delay-1s">Freelance Product Designer Running</h2>
                     </div>
 
                     <div class="banner__info">
-                        <p>We develop the relationships that underpin the next phase in your <br>
+                        <p class="animate__animated animate__fadeInUp  animate__delay-2s">We develop the relationships that underpin the next phase in your <br>
                             organisation’s growth.</p>
-                        <ul>
-                            <li>Master's degree in designing</li>
-                            <li>Outstanding mobile design</li>
+                        <ul class="animate__animated animate__fadeInUp  animate__delay-3s">
+                            <li>
+                                <i class="las la-check"></i>
+                                Master's degree in designing
+                            </li>
+                            <li>
+                                <i class="las la-check"></i>
+                                Outstanding mobile design
+                            </li>
                         </ul>
 
-                        <button class="btn-grad">Get Started</button>
+                        <button class="btn-grad animate__animated animate__fadeInUp  animate__delay-4s">Get Started</button>
                     </div>
                 </div>
 
@@ -113,7 +131,39 @@
 
 
 
-    <section class="service"></section>
+    <section class="service">
+        <div class="container">
+            <div class="service__title">
+                <p>What We Do Best</p>
+                <h2>Our Digital Services</h2>
+            </div>
+
+            <div class="service__list">
+                <div class="service__item">
+                    <img src="./img/pic1_3.jpg" alt="">
+                    <p>Web Development</p>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                </div>
+
+                <div class="service__item">
+                    <img src="./img/pic2_2.jpg" alt="">
+                    <p>Strategy & Research</p>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                </div>
+
+                <div class="service__item">
+                    <img src="./img/pic3_2.jpg" alt="">
+                    <p>Growth Tracking</p>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- <i class="flaticon-smile"></i> -->
     <section class="aboutus"></section>
     <section class="number"></section>
     <section class="feature"></section>
@@ -122,6 +172,10 @@
     <section class="subscribe"></section>
     <section class="link"></section>
     <footer></footer>
+
+
+
+
 
 </body>
 </html>
