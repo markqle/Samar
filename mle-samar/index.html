@@ -30,6 +30,23 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
+
+    <!-- OWL CAROUSEL -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -418,9 +435,92 @@
 
 
 
-    <section class="blog"></section>
-    <section class="subscribe"></section>
-    <section class="link"></section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__content">
+                <div class="title">
+                    <p>Our Blog</p>
+                    <h2>Latest News & Blog</h2>
+                </div>
+                
+                <div class="blog__info owl-carousel owl-theme">
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <img src="./img/pic1_1.jpg" alt="">
+                            <p>23 MARCH 2022</p>
+                        </div>
+
+                        <div class="blog__body">
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis delectus qui vitae modi. Corporis cupiditate veritatis ipsa? Veritatis, modi molestiae.</p>
+                        </div>
+
+                        <div class="blog__footer">
+                            <p>
+                                <i class="las la-user-circle"></i>
+                                <span>By John Doe</span>
+                            </p>
+
+                            <p>
+                                <i class="las la-comment"></i>
+                                <span>Comment 15</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <img src="./img/pic2.jpg" alt="">
+                            <p>23 MARCH 2022</p>
+                        </div>
+
+                        <div class="blog__body">
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis delectus qui vitae modi. Corporis cupiditate veritatis ipsa? Veritatis, modi molestiae.</p>
+                        </div>
+
+                        <div class="blog__footer">
+                            <p>
+                                <i class="las la-user-circle"></i>
+                                <span>By John Doe</span>
+                            </p>
+
+                            <p>
+                                <i class="las la-comment"></i>
+                                <span>Comment 15</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <img src="./img/pic3.jpg" alt="">
+                            <p>23 MARCH 2022</p>
+                        </div>
+
+                        <div class="blog__body">
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis delectus qui vitae modi. Corporis cupiditate veritatis ipsa? Veritatis, modi molestiae.</p>
+                        </div>
+
+                        <div class="blog__footer">
+                            <p>
+                                <i class="las la-user-circle"></i>
+                                <span>By John Doe</span>
+                            </p>
+
+                            <p>
+                                <i class="las la-comment"></i>
+                                <span>Comment 15</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer></footer>
 
 
@@ -450,7 +550,33 @@
     <script>
         Fancybox.bind("[data-fancybox]", {
     });
-
     </script>
+
+
+    <!-- OWL CAROUSEL -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+          $(".blog__info").owlCarousel({
+            loop: true, //lặp lại các item
+            margin: 10, //khoảng cách giữa các item
+            nav: false, //hiện mũi tên trái phải
+            responsive: {
+              0: {
+                items: 1 //số lượng item khi ở màn hình >= 0
+              },
+              576: {
+                items: 3 //số lượng item khi ở màn hình >= 576px
+              }
+            }
+          });
+        });
+      </script>
 </body>
 </html>
