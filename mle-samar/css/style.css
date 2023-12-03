@@ -10,6 +10,8 @@ html, body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    color: grey;
+    font-size: 16px;
 }
 
 .container{
@@ -18,6 +20,24 @@ html, body{
     margin: auto;
 }
 
+.title{
+  margin-bottom: 20px;
+}
+
+.title p:first-of-type{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.title h2{
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 20px;
+}
 
 
 /*! HEADER */
@@ -186,20 +206,6 @@ a:hover span {
   /* background-position: top center; */
 }
 
-.service__title p{
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #f55f8d;
-}
-
-.service__title h2{
-  font-size: 70px;
-  line-height: 1.1;
-  font-weight: 800;
-  color: black;
-  margin-bottom: 20px;
-}
 
 .service__list {
   display: grid;
@@ -229,13 +235,318 @@ a:hover span {
 .service__item p:first-of-type{
   font-weight: 700;
   font-size: 1.5rem;
+  color: black;
 }
 
 .service__item img{
   width: 215px;
 }
 
+/* ABOUT US */
+.aboutus{
+  padding: 70px 0;
 
+}
+
+.aboutus__item{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.aboutus__left {
+  position: absolute;
+  width: 60%;
+  left: -15%;
+}
+
+
+.aboutus__left img {
+  width: 100%;
+  border-radius: 0 100px 100px 0;
+}
+
+.aboutus__right{
+  width: 50%;
+  overflow: hidden;
+}
+
+.aboutus__right ul {
+  margin-bottom: 30px;
+  
+}
+
+.aboutus__right ul li {
+  list-style: none;
+}
+
+.aboutus__right i{
+  color: #f55f8d;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+/* NUMBER */
+.number{
+  padding: 80px 0;
+  background-image: url(../img/bg14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.number__content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.number__content i {
+  font-size: 45px;
+  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  background-size: 200%;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.number__item p:first-of-type{
+  font-size: 65px;
+  font-weight: 800;
+  color:#f55f8d;
+}
+
+.number__item p:last-of-type{
+  color: black;
+  font-size: 18px;
+}
+
+
+/* FEATURE */
+.feature{
+  padding: 100px 0;
+  background-image: url(../img/bg2.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.feature__content{
+  display: flex;
+}
+
+.feature__left, .feature__right{
+  width: 50%;
+}
+
+.feature__item:nth-child(1), .feature__item:nth-child(3)  {
+  margin-right: 40px; 
+}
+
+.feature__item:nth-child(2) {
+  margin-left: 40px; 
+}
+
+.feature__group .feature__item .feature__info{
+  display: flex;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0px 60px 0 rgba( 0, 0, 0, 10% );
+}
+
+.feature__info i{
+  font-size: 80px;  
+  color: #f55f8d;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.feature__info .flaticon__text{
+  padding-left: 25px;
+  z-index: 1;
+}
+
+.feature__info .flaticon__text h3{
+  font-weight: 800;
+  font-size: 1.5 rem;
+  color: black;
+}
+
+.feature__banner img{
+  max-width: 100%;
+  animation: move2 5s infinite;
+}
+
+.feature__info::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+
+  background-size: 200%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.feature__info:hover::after{
+  opacity: 1;
+}
+
+/* Add these rules for changing color on hover */
+.feature__info:hover i,
+.feature__info:hover .flaticon__text h3,
+.feature__info:hover .flaticon__text p{
+  color: white;
+  transition: .5s;
+}
+
+
+/* PORTFOLIO */
+.portfolio{
+  padding: 50px 0;
+}
+
+.portfolio .title{
+  text-align: center;
+}
+
+.portfolio__list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.5fr;
+  gap: 35px;
+}
+
+
+.portfolio__item:before{
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.75s;
+}
+
+.portfolio__item:hover::before{
+  left:125%
+}
+
+.portfolio__item img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio__item1{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.portfolio__item5{
+  grid-column: 1 / 3;
+}
+
+.portfolio__item6{
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
+.portfolio__item{
+  position:relative;
+  /* che đi thẻ con bị tràn */
+  overflow: hidden;
+}
+
+.portfolio__overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* kích thước này sẽ đi theo cha gần nhất */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* opacity:0; */
+  /* transition: all 0.75s; */
+}
+
+.portfolio__icon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* Trước hover */
+  transform: translate(50px, -50px);
+  /* transition luon dat truoc hover */
+  transition: all .5s;
+  background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  background-size: 200%;
+  border-radius: 8px;
+  font-size: 28px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.portfolio__item:hover .portfolio__icon{
+  transform:translate(0);
+}
+
+
+.portfolio__text{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  transform: translateY(50px);
+  /* transition luon dat truoc hover */
+  transition: all .5s;
+  color: white;
+}
+
+.portfolio__item:hover .portfolio__text{
+  transform:translateY(0);
+
+}
+
+  /* Trước hover - cho overlay am */
+.portfolio__overlay{
+  opacity: 0;
+  transition: all .5s;
+}
+
+/* Sau hover */
+
+.portfolio__item:hover .portfolio__overlay{
+  opacity: 1;
+}
 @keyframes upToDown {
     49% {
       transform: translateY(100%);
@@ -248,3 +559,18 @@ a:hover span {
       opacity: 1;
     }
   }
+
+@keyframes move2 {
+  0% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+
+  50% {
+    transform: rotate(-1deg) translate(-2px, -2px);
+  }
+
+  100% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+}
+

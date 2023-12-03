@@ -19,11 +19,16 @@
     <!-- FLATICON -->
     <link rel="stylesheet" href="./css/flaticon/flaticon.css">
 
-    <!-- ANIMATE FADE IN UP -->
+    <!-- ANIMATE FADE IN UP & WOW.JS -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <!-- FANCY-BOX -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -122,7 +127,7 @@
                     </div>
                 </div>
 
-                <div class="banner__right">
+                <div class="banner__right animate__animated animate__fadeInUp  animate__delay-1s">
                     <img src="./img/pic3_1.png" alt="">
                 </div>
             </div>
@@ -133,7 +138,7 @@
 
     <section class="service">
         <div class="container">
-            <div class="service__title">
+            <div class="title">
                 <p>What We Do Best</p>
                 <h2>Our Digital Services</h2>
             </div>
@@ -163,11 +168,256 @@
 
 
 
-    <!-- <i class="flaticon-smile"></i> -->
-    <section class="aboutus"></section>
-    <section class="number"></section>
-    <section class="feature"></section>
-    <section class="portfolio"></section>
+    <section class="aboutus">
+        <div class="container">
+            <div class="aboutus__item">
+                <div class="aboutus__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
+                    <img src="./img/pic1.jpg" alt="">
+                </div>
+    
+                <div class="aboutus__right wow animate__animated animate__fadeInRight" data-wow-duration="2s" data-wow-delay=".2s"">
+                    <div class="title">
+                        <p>About Us</p>
+                        <h2>Build Your <br>
+                            Business Website <br>
+                            Better</h2>
+                        <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="flaticon-check"></i>
+                            We support programs that create advancement opportunities for people.
+                        </li>
+                        <li>
+                            <i class="flaticon-check"></i>
+                            Get a view of events and trends. Be updated on our recent news.
+                        </li>
+                        <li>
+                            <i class="flaticon-check"></i>
+                            Finally, it all comes down to people. Creating a winning team.
+                        </li>
+                        <li>
+                            <i class="flaticon-check"></i>
+                            Get a view of events and trends. Be updated on our recent news.
+                        </li>
+                    </ul>
+                    <button class="btn-grad">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="number">
+        <div class="container">
+            <div class="number__content">
+                <div class="number__item">
+                    <i class="flaticon-smile"></i>
+                    <p>
+                        <span class="counter">18</span>
+                        MI
+                    </p>
+                    <p>Satisfied Clients</p>
+                </div>
+
+                <div class="number__item">
+                    <i class="flaticon-line-chart"></i>
+                    <p>
+                        <span class="counter" >20</span>
+                        MI
+                    </p>
+                    <p>Project Completed</p>
+                </div>
+
+                <div class="number__item">
+                    <i class="flaticon-startup"></i>
+                    <p>
+                        <span class="counter">30</span>
+                        MI
+                    </p>
+                    <p>Project Launched</p>
+                </div>
+
+                <div class="number__item">
+                    <i class="flaticon-confetti"></i>
+                    <p>
+                        <span class="counter">50</span>
+                    </p>
+                    <p>Years Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="feature">
+        <div class="container">
+            <div class="feature__content">
+                <div class="feature__left">
+                    <div class="title feature__item wow animate__animated animate__fadeInLeft data-wow-duration="2s" data-wow-delay="0.2s">
+                        <p>Our Features</p>
+                        <h2>Behind The Story <br>
+                            Of Samar Agency</h2>
+                    </div>
+
+                    <div class="feature__group">
+                        <div class="feature__item wow animate__animated animate__fadeInRight data-wow-duration="2s" data-wow-delay=".4s"">
+                            <div class="feature__info">
+                                <i class="flaticon-idea"></i>
+                                <div class="flaticon__text">
+                                    <h3>Idea & Analysis Gathering</h3>
+                                    <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item wow animate__animated animate__fadeInRight data-wow-duration="2s" data-wow-delay=".6s"">
+                            <div class="feature__info">
+                                <i class="flaticon-coding"></i>
+                                <div class="flaticon__text">
+                                    <h3>Design & Developing</h3>
+                                    <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item wow animate__animated animate__fadeInRight data-wow-duration="2s" data-wow-delay=".8s"">
+                            <div class="feature__info">
+                                <i class="flaticon-rocket"></i>
+                                <div class="flaticon__text">
+                                    <h3>Testing & Launching</h3>
+                                    <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature__right">
+                    <div class="feature__banner">
+                        <img src="./img/pic3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__content">
+                <div class="title">
+                    <p>Portfolio</p>
+                    <h2>Our Latest Work</h2>
+                </div>
+
+                <div class="portfolio__list">
+                    <div class="portfolio__item portfolio__item1  wow animate__animated animate__fadeInUp data-wow-duration="2s" data-wow-delay="0.2s"">
+                        <img src="./img/pic1_2.jpg" alt="">
+                        <div class="portfolio__overlay">
+                            <div class="portfolio__icon">
+                                <a href="./img/pic1_2.jpg" data-fancybox = "gallery" data-caption="Design #1" >
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>                                
+                            </div>
+                            </a>
+
+                            <div class="portfolio__text">
+                                <h3>Software Landing</h3>
+                                <p>By John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item wow animate__animated animate__fadeInUp data-wow-duration="2s" data-wow-delay="0.2s"">
+                        <img src="./img/pic2_1.jpg" alt="">
+                        <div class="portfolio__overlay">
+                            <div class="portfolio__icon">
+                                <a href="./img/pic2_1.jpg" data-fancybox = "gallery" data-caption="Design #2" >
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__text">
+                                <h3>Software Landing</h3>
+                                <p>By John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item  wow animate__animated animate__fadeInUp data-wow-duration="2s" data-wow-delay="1s"">
+                        <img src="./img/pic3_1.jpg" alt="">
+                        <div class="portfolio__overlay">
+                            <div class="portfolio__icon">
+                                <a href="./img/pic3_1.jpg" data-fancybox = "gallery" data-caption="Design #3" >
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__text">
+                                <h3>Software Landing</h3>
+                                <p>By John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item  wow animate__animated animate__fadeInUp data-wow-duration="2s" data-wow-delay="1s"">
+                        <img src="./img/pic4.jpg" alt="">
+                        <div class="portfolio__overlay">
+                            <div class="portfolio__icon">
+                                <a href="./img/pic4.jpg" data-fancybox = "gallery" data-caption="Design #4" >
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__text">
+                                <h3>Software Landing</h3>
+                                <p>By John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item portfolio__item5  wow animate__animated animate__fadeInUp data-wow-duration="2s" data-wow-delay="1.5s"">
+                        <img src="./img/pic5.jpg" alt="">
+                        <div class="portfolio__overlay">
+                            <div class="portfolio__icon">
+                                <a href="./img/pic5.jpg" data-fancybox = "gallery" data-caption="Design #5">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__text">
+                                <h3>Software Landing</h3>
+                                <p>By John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item portfolio__item6  wow animate__animated animate__fadeInUp data-wow-duration="2s" data-wow-delay="1s"">
+                        <img src="./img/pic6.jpg" alt="">
+                        <div class="portfolio__overlay">
+                            <div class="portfolio__icon">
+                                <a href="./img/pic6.jpg" data-fancybox = "gallery" data-caption="Design #6">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__text">
+                                <h3>Software Landing</h3>
+                                <p>By John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="blog"></section>
     <section class="subscribe"></section>
     <section class="link"></section>
@@ -175,7 +425,32 @@
 
 
 
+    <!-- LIBRARY -->
+    <!-- JQUERY (thư viện hỗ trợ - luôn đặt đầu) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- COUNT UP LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- COUNTUP -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        // Tìm đến các thẻ tên counter và gắn hiệu ứng countup cho các thẻ đó
+        $('.counter').countUp();
+    </script>
 
 
+    <!-- FANCY-BOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+    });
+
+    </script>
 </body>
 </html>
