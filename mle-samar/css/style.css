@@ -789,6 +789,35 @@ footer .footer__subscribe {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Backtotop */
+.backtotop{
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+
+  background-color: #e62b4a;
+  font-size: 32px;
+  color: white;
+
+  /* mac dinh di theo the cha body */
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+
+  /* ẩn button */
+  opacity: 0;
+}
+
+/* hiện lại button khi scroll */
+
+.cd-top--is-visible{
+  opacity: 1;
+  transition: all .5s;
+}
+
 @keyframes upToDown {
   49% {
     transform: translateY(100%);
